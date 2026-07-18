@@ -98,7 +98,7 @@ docs/specs/<issue-number>-<feature-slug>/
 - Issue 链接 Spec，`spec.md` 也链接 Issue。
 - Issue 的 open/closed 状态是协作状态权威来源。
 - `tasks.md` 只保存技术拆解；需要多人独立领取的任务转成子 Issue。
-- Spec、Plan 和 Tasks 的内容由 `big-project-spec` 维护，本 Skill 不重复编写其工作流。
+- Spec、Plan 和 Tasks 的内容由 `big-project-spec-runner` 维护，本 Skill 不重复编写其工作流。
 
 默认生命周期：
 
@@ -143,6 +143,6 @@ type:feature + docs/specs/<issue-number>-<feature-slug>/
 
 - 不创建本地 Issue 状态副本或独立 Issue 治理文档。
 - 不把 GitHub Issue 当作稳定项目事实正文。
-- 不替代 `big-project-spec` 编写详细 Spec、Plan 或 Tasks。
+- 不替代 `big-project-spec-runner` 编写详细 Spec、Plan 或 Tasks。
 - 不替代实现、测试或代码审查流程。
 - 不把未落地需求写入当前功能 Overview。

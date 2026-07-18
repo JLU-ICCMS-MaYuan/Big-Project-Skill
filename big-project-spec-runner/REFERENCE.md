@@ -1,4 +1,4 @@
-# Big Project Spec 参考规则
+# Big Project Spec Runner 参考规则
 
 ## 目录
 

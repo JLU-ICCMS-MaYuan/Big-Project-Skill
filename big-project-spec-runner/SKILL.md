@@ -1,9 +1,9 @@
 ---
-name: big-project-spec
+name: big-project-spec-runner
 description: Manages single or multiple feature specifications through serial review, documentation gates, implementation, and convergence without Spec Kit. Use when creating or maintaining numbered feature directories under docs/specs, reviewing multiple Specs one by one, planning accepted features, analyzing Spec artifacts, or implementing work from tasks.md.
 ---
 
-# Big Project Spec
+# Big Project Spec Runner
 
 直接维护大型项目的 Feature 设计与实施产物，不依赖 Spec Kit CLI、Preset、
 `.specify/`、Git 分支命名或本地活动 Feature 状态。
