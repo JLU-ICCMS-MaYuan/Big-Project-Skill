@@ -45,20 +45,20 @@ description: Maintains a large codebase's authoritative current-function overvie
 ### 初始化模式
 
 1. 依次使用 `explore`、`understand`、`understand-explain`。
-2. `understand-explain` 必须覆盖识别出的每一个大功能。
-3. 生成拟创建的大功能、小功能目录树及证据摘要。
+2. `understand-explain` 必须覆盖识别出的每一个功能分组。
+3. 生成拟创建的递归功能目录树及证据摘要，并说明每层目录存在的必要性。
 4. 获得用户确认后，创建 `docs/overview/`。
 
 ### 增量更新模式
 
 1. 使用 `explore` 检查本次 Feature、Debug、Git diff 和相关测试代码。
 2. 使用 `understand-explain` 分析受影响功能。
-3. 只更新行为确实发生变化的小功能文档及关联 `README.md`。
+3. 只更新行为确实发生变化的功能文档及其各级导航 `README.md`。
 
 ### 全局结构变化模式
 
 1. 依次使用 `explore`、`understand`、`understand-explain`。
-2. 提交新增大功能、重新分类、移动、重命名或删除建议及依据。
+2. 提交新增功能层级或子目录、重新分类、移动、重命名或删除建议及依据。
 3. 获得用户确认后才能实施结构变化。
 
 如果所需分析 Skill 不可用，使用代码搜索和文件读取完成同等只读分析，并明确报告
