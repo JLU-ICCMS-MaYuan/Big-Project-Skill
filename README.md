@@ -11,6 +11,7 @@
 | [`big-project-issue-manager`](big-project-issue-manager/SKILL.md) | 管理 GitHub Issue 的分类、拆分、关联、迁移与关闭检查 | 维护 Idea、Epic、Feature、Bug、文档和维护事项的协作状态 |
 | [`big-project-spec-runner`](big-project-spec-runner/SKILL.md) | 维护 Feature 的 Spec、Plan、Tasks、Checklist 等设计与实施产物 | 规划、澄清、分析、实现或收敛 `docs/specs/<issue-number>-<feature-slug>/` |
 | [`big-project-overview-maintainer`](big-project-overview-maintainer/SKILL.md) | 维护已落地功能的权威总览 | 初始化或增量更新 `docs/overview/`，同步代码已经证明的当前行为 |
+| [`big-project-translator`](big-project-translator/SKILL.md) | 用大白话和具体例子解释复杂内容 | 解释代码、架构、方案、报错或文档，减少专业术语和抽象表达 |
 
 ## 协作模型
 
@@ -49,6 +50,7 @@ cp -R Big-Project-Skill/big-project-contractor <project>/.agents/skills/
 cp -R Big-Project-Skill/big-project-issue-manager <project>/.agents/skills/
 cp -R Big-Project-Skill/big-project-spec-runner <project>/.agents/skills/
 cp -R Big-Project-Skill/big-project-overview-maintainer <project>/.agents/skills/
+cp -R Big-Project-Skill/big-project-translator <project>/.agents/skills/
 ```
 
 也可以将这些目录放入 Agent 支持的个人 Skill 目录。具体发现路径以所使用的 Agent 文档为准。
