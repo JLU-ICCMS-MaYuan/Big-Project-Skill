@@ -15,7 +15,8 @@ description: 将大型项目的初步想法通过多轮设计树访谈转化为�
 - 最终只创建或更新 `docs/plan/<plan-slug>.md`。
 - 不创建或修改 Issue，不编写单个 Feature 的 Spec、Tasks 或实现代码，不把计划写入
   `docs/overview/`。
-- 规划确认后，Feature 可交给 `big-project-issue-manager` 和 `big-project-spec-runner`。
+- 规划确认后，初始完整交付交给 `big-project-contractor`；孤立 Feature 可直接交给
+  `big-project-issue-manager` 和 `big-project-spec-runner`。
 
 ## 设计树访谈
 
