@@ -1,0 +1,22 @@
+{
+  "name": "big-project-skill",
+  "owner": {
+    "name": "mayuan",
+    "url": "https://github.com/JLU-ICCMS-MaYuan"
+  },
+  "metadata": {
+    "description": "Big Project Skill 集合：总体规划、Issue 管理、Feature Spec、当前功能总览与通俗解释。"
+  },
+  "plugins": [
+    {
+      "name": "big-project-skill",
+      "description": "面向大型软件项目的 Skill 集合，用前期总体规划、GitHub Issues、Feature Spec 与当前功能总览形成职责清晰、可追踪的需求与文档闭环。",
+      "author": {
+        "name": "mayuan"
+      },
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/JLU-ICCMS-MaYuan/Big-Project-Skill"
+    }
+  ]
+}

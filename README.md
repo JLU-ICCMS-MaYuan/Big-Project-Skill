@@ -40,11 +40,57 @@ docs/overview/
 
 ## 安装
 
-将需要的 Skill 目录复制到目标项目的 `.agents/skills/`：
+### Claude Code
+
+推荐作为插件安装，一次装入全部 6 个 Skill：
+
+```bash
+# 在 Claude Code 会话中执行
+/plugin marketplace add JLU-ICCMS-MaYuan/Big-Project-Skill
+/plugin install big-project-skill@big-project-skill
+```
+
+本地已经 clone 时，可以直接从目录添加：
 
 ```bash
 git clone https://github.com/JLU-ICCMS-MaYuan/Big-Project-Skill.git
+```
 
+```bash
+# 在 Claude Code 会话中执行
+/plugin marketplace add ./Big-Project-Skill
+/plugin install big-project-skill@big-project-skill
+```
+
+也可以只临时试用一次，不写入配置：
+
+```bash
+claude --plugin-dir ./Big-Project-Skill
+```
+
+安装后 Skill 以 `big-project-skill:<skill-name>` 命名，例如
+`/big-project-skill:big-project-planer`。用 `/plugin` 查看已安装状态。
+
+不想用插件机制时，把需要的目录复制到 Claude Code 的 Skill 发现路径：
+
+```bash
+# 项目级，随仓库共享
+mkdir -p <project>/.claude/skills
+cp -R Big-Project-Skill/big-project-planer <project>/.claude/skills/
+
+# 用户级，跨项目可用
+mkdir -p ~/.claude/skills
+cp -R Big-Project-Skill/big-project-planer ~/.claude/skills/
+```
+
+Claude Code 只从 `.claude/skills/`、`~/.claude/skills/` 和已启用插件中发现 Skill，
+不会扫描 `.agents/skills/`。
+
+### Codex 及其他 Agent
+
+将需要的 Skill 目录复制到目标项目的 `.agents/skills/`：
+
+```bash
 cp -R Big-Project-Skill/big-project-planer <project>/.agents/skills/
 cp -R Big-Project-Skill/big-project-contractor <project>/.agents/skills/
 cp -R Big-Project-Skill/big-project-issue-manager <project>/.agents/skills/

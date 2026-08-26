@@ -1,0 +1,25 @@
+{
+  "name": "big-project-skill",
+  "version": "1.0.0",
+  "description": "面向大型软件项目的 Skill 集合，用前期总体规划、GitHub Issues、Feature Spec 与当前功能总览形成职责清晰、可追踪的需求与文档闭环。",
+  "author": {
+    "name": "mayuan",
+    "url": "https://github.com/JLU-ICCMS-MaYuan"
+  },
+  "repository": "https://github.com/JLU-ICCMS-MaYuan/Big-Project-Skill",
+  "keywords": [
+    "planning",
+    "spec",
+    "issues",
+    "documentation",
+    "large-project"
+  ],
+  "skills": [
+    "./big-project-planer",
+    "./big-project-contractor",
+    "./big-project-issue-manager",
+    "./big-project-spec-runner",
+    "./big-project-overview-maintainer",
+    "./big-project-translator"
+  ]
+}
