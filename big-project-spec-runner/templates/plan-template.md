@@ -1,6 +1,6 @@
 # 实施计划：[功能名称]
 
-**GitHub Issue**：[#[编号]]([Issue URL])
+**Issue**：[#[编号]]([Issue URL])
 
 **日期**：[YYYY-MM-DD]
 

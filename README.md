@@ -1,6 +1,6 @@
 # Big Project Skill
 
-面向大型软件项目的 Codex/Agent Skill 集合，用前期总体规划、GitHub Issues、Feature Spec 与当前功能总览形成职责清晰、可追踪的需求与文档闭环。
+面向大型软件项目的 Codex/Agent Skill 集合，用前期总体规划、托管平台（GitHub/Gitee/GitLab）Issues、Feature Spec 与当前功能总览形成职责清晰、可追踪的需求与文档闭环。
 
 ## 包含的 Skills
 
@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | [`big-project-planer`](big-project-planer/SKILL.md) | 通过多轮设计树访谈，将初步想法整理为前期总体规划 | 挖掘潜在需求，明确范围、能力地图、架构方向、风险与阶段路线，并写入 `docs/plan/` |
 | [`big-project-contractor`](big-project-contractor/SKILL.md) | 将已确认总体规划完整拆成 Feature 与 Spec，通过全局文档门后依次实现 | 新项目或大型版本需要先得到完整需求蓝图，再由 AI 按依赖连续交付 |
-| [`big-project-issue-manager`](big-project-issue-manager/SKILL.md) | 管理 GitHub Issue 的分类、拆分、关联、迁移与关闭检查 | 维护 Idea、Epic、Feature、Bug、文档和维护事项的协作状态 |
+| [`big-project-issue-manager`](big-project-issue-manager/SKILL.md) | 管理 Issue 的分类、拆分、关联、迁移与关闭检查，自动按远端选择 gh/gitee/glab CLI | 维护 Idea、Epic、Feature、Bug、文档和维护事项的协作状态 |
 | [`big-project-spec-runner`](big-project-spec-runner/SKILL.md) | 维护 Feature 的 Spec、Plan、Tasks、Checklist 等设计与实施产物 | 规划、澄清、分析、实现或收敛 `docs/specs/<issue-number>-<feature-slug>/` |
 | [`big-project-overview-maintainer`](big-project-overview-maintainer/SKILL.md) | 维护已落地功能的权威总览 | 初始化或增量更新 `docs/overview/`，同步代码已经证明的当前行为 |
 | [`big-project-translator`](big-project-translator/SKILL.md) | 用大白话和具体例子解释复杂内容 | 解释代码、架构、方案、报错或文档，减少专业术语和抽象表达 |
@@ -21,7 +21,7 @@
 docs/plan/<plan-slug>.md
   └─ 前期总体目标、能力地图、架构方向、跨功能约束、风险与阶段路线
 
-GitHub Issues
+托管平台 Issues（GitHub/Gitee/GitLab）
   └─ 未完成工作的协作状态、类型、依赖与父子关系
 
 docs/specs/<issue-number>-<feature-slug>/
@@ -104,6 +104,7 @@ cp -R Big-Project-Skill/big-project-translator <project>/.agents/skills/
 ## 使用要求
 
 - 执行前先读取目标仓库的 `AGENTS.md`；仓库规则优先于 Skill 默认规则。
+- Issue 操作支持 GitHub（`gh`）、Gitee（`gitee`，gitee.com/oschina/gitee-cli）与 GitLab（`glab`），由仓库远端自动检测，`AGENTS.md` 可用 `issue_platform` 显式覆盖；CLI 缺失时按 `big-project-issue-manager` 的指引协助安装。
 - 总体规划只记录前期目标、方向和阶段边界，不替代 Feature Spec 或当前功能 Overview。
 - Contractor 只用于新项目或大型版本的初始完整交付；全部 Spec 文档通过质量门前不得开始实现。
 - Issue number 同时作为 Feature Spec 目录编号，避免多人并行时发生编号冲突。

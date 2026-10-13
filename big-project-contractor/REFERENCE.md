@@ -6,7 +6,7 @@
 docs/plan/<plan-slug>.md
   -> 已确认的总体目标、范围、能力、架构方向和阶段约束
 
-GitHub Epic / Feature Issues
+托管平台（GitHub/Gitee/GitLab）Epic / Feature Issues
   -> 初始交付的范围、父子关系、依赖和协作状态
 
 docs/specs/<issue-number>-<feature-slug>/
@@ -76,7 +76,8 @@ Documentation Impact 和建议顺序。拆分确认是对 Feature 地图的确�
 4. 规划中的明确后续项按用户决策创建 `type:idea`；不属于本次实现队列。
 5. 全部创建后核对 Issue 数量、规划项覆盖、父子关系和依赖图。
 
-连接器或 GitHub 不可用时停止写入。不得用临时编号创建 `docs/specs/`，因为 Spec 目录编号必须
+连接器或对应平台 CLI 不可用时停止写入（平台与 CLI 检测见 `big-project-issue-manager`）。
+不得用临时编号创建 `docs/specs/`，因为 Spec 目录编号必须
 复用真实 Issue number。
 
 ## 6. 全量 Spec 工作流
